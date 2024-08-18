@@ -113,7 +113,7 @@ func refresh():
 	_refresh.call_deferred()
 
 ## Calls [method refresh] on all ActionIcon nodes in the scene tree.
-static func refresh_all():
+func refresh_all():
 	Engine.get_main_loop().call_group(GROUP_NAME, refresh.get_method())
 
 func _refresh():
